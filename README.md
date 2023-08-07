@@ -1,6 +1,5 @@
 # FastAPI Monorepo Project
 
-## Introduction
 이 프로젝트는 FastAPI, Poetry, Monorepo를 사용한 공부용 프로젝트입니다.
 
 

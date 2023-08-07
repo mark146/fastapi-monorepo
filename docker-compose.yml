@@ -1,0 +1,16 @@
+version: '3'
+services:
+  service1:
+    build: .
+    command: ["uvicorn", "service1.main:app", "--host", "0.0.0.0", "--port", "9280"]
+    volumes:
+      - .:/app
+    ports:
+      - 9280:9280
+  service2:
+    build: .
+    command: ["uvicorn", "service2.main:app", "--host", "0.0.0.0", "--port", "9281"]
+    volumes:
+      - .:/app
+    ports:
+      - 9281:9281
